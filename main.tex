@@ -1,0 +1,101 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% IF YOU WANT TO USE ENGLISH OR SWEDISH, CHANGE HERE
+\usepackage[swedish]{babel}
+%\usepackage[english]{babel}
+
+
+\usepackage{amsmath , amssymb , amsthm}
+\usepackage{relsize}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{verbatim}
+\usepackage{pdfpages}
+\usepackage[document]{ragged2e}
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\usepackage[margin=0.977in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{cases}
+\usepackage{breqn}
+\usepackage{dirtytalk}
+\usepackage{amsmath}
+\usepackage{natbib}
+\usepackage[nottoc]{tocbibind}
+\usepackage{lipsum, babel}
+%\bibliographystyle{abbrvnat}
+\bibliographystyle{agsm}
+\setcitestyle{authoryear,open={(},close={)}}
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\usepackage{wrapfig}
+
+\graphicspath{Images/}
+
+%===================================================
+%   Ovan är importerade packet av diverse slag, för den som vill veta vad 
+%   alla gör/ger är det bara att söka på valfri sökmotor om dessa.
+%   (Blir annars mycket text som ingen vill läsa av er kommer läsa)
+%===================================================
+
+\begin{document}
+\begin{titlepage}
+
+%===================================================
+%   Här skriver ni projektnamn, kursnamn, kurskod
+\title{\textbf{Project Group} \\ \textbf{Course Name} \\ Course Code} 
+
+%===================================================
+%   Här skriver ni era namn
+\author{Jennifer Fredberg \& Johanna Persson}    
+
+%===================================================
+%   Datum som kommer stå vid titel sidan
+%   Om den lämnas \date{} kommer recompile datumet stå.
+\date{\today}
+
+\maketitle
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5 ]{Images/Chalmers.png}
+\end{figure}
+\end{titlepage}
+
+\newpage
+%===================================================
+%   Innehållsförtekning
+\tableofcontents
+\newpage
+
+%===================================================
+%   \section{namn} är ett nytt kapitel men namn namn
+\input{Chapters/1_Inledning.tex}
+\newpage
+\input{Chapters/2_Metod.tex}
+\newpage
+\input{Chapters/3_Tidplan.tex}
+\newpage
+%\input{Chapters/4_Equations_and_Symbols.tex}
+%\newpage
+%\section{Last Chapter: Fancy stuff}
+%You do not always have to write .tex files for each chapter, however, they provide an easier overview of each individual part of the document. So for smaller reports etc. you can just as well write directly in main.tex, depending on how you want to do yourself, warning however if you write a lot it will be harder to keep track of what is what in the document.\\[5mm]
+%A more bookish way of writing is to have 2 columns of text, this can be specified as the default at the beginning of the document or you can switch to and from more columns in the following way: \\[5mm]
+%Warning, however, gives a new page.\twocolumn
+\textbf{Example text lipsum}\\
+\lipsum[1-5]
+\onecolumn
+\newpage
+
+%====================================================
+%   Litteraturförteckning via bib fil
+%   vilket underlättar inmatning av källor till dokumentet.
+\bibliography{Bibtex_file.bib}
+\end{document}

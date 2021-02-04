@@ -1,0 +1,69 @@
+\section{Inledning}
+
+
+
+\subsection{Bakgrund}
+
+%I detta avsnitt beskrivs bakgrunden till frågeställningen, det vill säga en kort beskrivning av företagets situation och varför företaget vill ha uppdraget utfört. Observera att det inte är bakgrunden till att studenten gör examensarbetet som ska beskrivas
+
+% Johanna test bakgrund: 
+Inom fastighetsautomation används system som kan koppla ihop och samla data från de kopplade enheterna. Ett system som används är SCADA Citect, där projekt delas upp i projektmappar med de tillhörande filerna. Dessa filer kan innehålla bilder, larm och variabler. Datan i projekten kan ändras av flera olika instanser som har tillgång till datan och ändras i dagsläget manuellt av olika personer. Vid den nuvarande inmatningen kan man inte säkerställa att datan matas in på ett korrekt sätt och måste granskas för att kontrollera kvaliten. Fel inmtning kan resultera i att monterade sensorer inte kan användas för att de fått tilldelat ett felaktigt variabelnamn. 
+\\[5mm]
+
+I nuläget kontrolleras alla inmatade data manuellt och tar mycket arbetstid. För att autmatisera kontrollen av datakvaliten på datan behövs ett script och användargränssnitt för att kontrollera vilka filer som saknas, tidsstämplar som är annorlunda samt skillnader inne i .dbf-filer (typ av excel-format). På så sätt kan man få en överblick kring vad som ändrats i projekten i form utav nya bilder, larm och ändrade larmprioriteter. Det är i dessa filer som behov av automatisk kontroll eller automatiskt kunna plocka fram två filer för att jämföra för att se om rätt syntax har används vid ändring. Kvalitén på SCADA systemets funktion är beroende av kvalitén på ändringarna av filerna.
+
+
+%I SCADA systemet Citect så byggs projekt upp i form av projektmappar där filer för bilder, variabler och larm sparas. Datan till varje projekt kan ändras på flera olika ställen (olika personer), dvs datan i SCADA systemet där man i dagsläget inte kan garantera kvaliteten på%det som ändras/matas in. Exempelvis vilka filer som saknas, tidsstämplar som är annorlunda samt skillnader inne i .dbf-filer (typ av excel-format). På så sätt kan man få en överblick kring
+%vad som ändrats i projekten i form utav nya bilder, larm och ändrade larmprioriteter. Det är
+%i dessa filer som behov av automatisk kontroll eller automatiskt kunna plocka fram två filer
+%för att jämföra för att se om rätt syntax har används vid ändring. Kvalitén på SCADA
+%systemets funktion är beroende av kvalitén på ändringarna av filerna.
+
+
+%Jennifer test bakgrund (Frågesätlnning lös skiten bara) använt å gjort om lite i den texten vi hade: Acobia är ett företag som skapar smarta lösningar på det man bara vill skall fungera, som infrastruktur och fastigheter. Acobia använder sig i dagsläget av SCADA systemet Citect. I de olika projekten skapas projektmappar, där bland annat filer för bilder, variabler och larm sparas. Då datan till varje projekt kan ändras på flera olika ställen (av olika personer), kan man i dagsläget inte garantera kvaliteten på det som ändras/matas in. Vilket ställer till med problem, exempelvis vilka filer som saknas, tidsstämplar som är annorlunda samt skillnader inne i .dbf-filer (typ av excel-format). Det blir då viktigt för företaget att få en bra överblick kring vad som ändrats i projektet i from av nya bilder, larm och ändrade larmprioriteter. Kvalitén på SCADA systemets funktion är beroende av kvalitén på ändringarna av filerna.
+ 
+
+
+%Acobia skapar intelligenta lösningar där affärer, organisationer och system integreras till en smart helhet.
+
+\subsection{Syfte}
+%Syftet är en kort beskrivning av uppdraget och vilket resultat uppdraget ska leda till.'
+
+Syftet med arbetet är att skapa ett verktyg där man jämför filer vid olika tider för att se skillnaderna. Kontrollen av datan automatiseras så att mindre arbetstid behöver läggas på att kontrollera inmatade och ändrade värden i projektfilerna.
+
+
+
+%För att lösa problemet med försämringen av kavliteten på SCADA systemets funktion kommer en jämförelse att behövas göras mellan den nya och gamla filen. Detta kan göras med en automatisk kontroll eller att automatiskt plocka fram de två filerna för att kunnde jämföra dem för att se om rätt syntax har använts. Ett program som automatiskt jämför filer för att kunna upptäcka de skillnader som uppståt vid filändring kommer att utvecklas. 
+\subsection{Avgränsningar}
+Under avgränsningar talar man om vad man inte ska behandla.
+
+
+\begin{itemize}
+    \item Vet inte
+\end{itemize}
+
+
+\subsection{Mål}
+Målet är att kunna med ett UI och logik bakom kunna jämföra två filer och visa skillnaderna mellan dessa. Det ska även visa vilken version av filerna som öppnas för att kunna följa när de felaktiga ändringarna uppkommer.
+
+
+
+//Går det att med filerna presentera skillnaderna mellan dom så att det sparar arbetstid.
+
+
+//Utifrån syftet ska frågeställningen preciseras, exempelvis genom att skriva ner ett antal frågor //som ska besvaras. Ett annat sätt är att skriva ett antal påståenden (hypoteser) som sedan ska //verifieras eller förkastas under arbetets gång.
+
+
+
+\begin{itemize}
+    \item Hur delar SCADA upp filerna som uppkommer vid projekt och hur är SCADA systemet uppbyggt?
+    \item Hur kan man läsa in en fil?
+    \item Hur ska man plocka ut och jämföra två filer?
+    \item Hur sparar man och producerar en ny fil (eller på annat sätt) för att visa skillnaderna?
+    \item Hur fungerar en databas/filserver?
+    \item Hur ska man koppla ovan logik för att kontrollera filerna till ett användbart program?
+    \item Går det att sammanställa på ett användarvänligt sätt?
+    \item 
+    \item 
+\end{itemize}
+
